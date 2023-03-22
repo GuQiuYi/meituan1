@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>com.it</groupId>
-    <artifactId>meituan</artifactId>
+    <artifactId>meituan1</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -21,6 +21,12 @@
     </properties>
 
     <dependencies>
+        <!--redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
         <!--阿里云短信服务-->
         <dependency>
             <groupId>com.aliyun</groupId>

@@ -3,13 +3,17 @@ server:
 spring:
   application:
     #应用的名称，可选
-    name: meituan
+    name: meituan1
   datasource:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://localhost:3306/waimai?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
       username: root
       password: 1234
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
 mybatis-plus:
   configuration:
     #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
@@ -19,4 +23,4 @@ mybatis-plus:
     db-config:
       id-type: ASSIGN_ID
 meituan:
-  path: D:\javasource\MavenProject\meituan\
+  path: D:\javasource\MavenProject\meituan1\
