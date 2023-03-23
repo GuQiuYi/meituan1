@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 @ServletComponentScan
 @EnableTransactionManagement
-@EnableCaching//开启Spring Cache注解方式的缓存功能
+//@EnableCaching//开启Spring Cache注解方式的缓存功能
 public class MeituanApplication {
     public static void main(String[] args) {
         SpringApplication.run(MeituanApplication.class,args);

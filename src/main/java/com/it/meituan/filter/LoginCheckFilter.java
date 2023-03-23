@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSON;
 import com.it.meituan.common.BaseContext;
 import com.it.meituan.common.R;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.util.AntPathMatcher;
 
 import javax.servlet.*;
@@ -35,7 +34,11 @@ public class LoginCheckFilter implements Filter {
                 "/front/**",
                 "/common/**",
                 "/user/sendMsg",//移动端发送短信
-                "/user/login"//移动端登录
+                "/user/login",//移动端登录
+                "/doc.html",
+                "/webjars/**",
+                "/swagger-resources",
+                "/v2/api-docs"
         };
         //2.判断本次请求是否需要处理
         boolean check=check(urls,requestURI);
